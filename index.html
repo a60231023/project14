@@ -1,67 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project 14</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dance-Home-Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <div class="left-img">
-            <div class="logo">
-                <img src="./assets/logo.svg" alt="logo">
-            </div>
+      <div class="content-left">
+        <img id="logo" src="./images/Logo.png" alt="logo" srcset="" />
+        <img
+          id="hero-big"
+          src="./images/hero-section-big.jpg"
+          alt="hero-image"
+          srcset=""
+        />
+      </div>
+      <div class="content-right">
+        <div class="nav-container">
+          <div class="line"></div>
+          <ul class="list">
+            <li class="list-item">Home</li>
+            <li class="list-item">About Us</li>
+            <li class="list-item">Portfolio</li>
+            <li class="list-item">Contact</li>
+          </ul>
         </div>
-        <div class="right">
-            <nav>
-                <div class="line"></div>
-                <ul class="list">
-                    <li class="list-item">Home</li>
-                    <li class="list-item">About Us</li>
-                    <li class="list-item">Portfolio</li>
-                    <li class="list-item">Contact</li>
-                </ul>
-            </nav>
-            <div class="wrapper-creativity">
-                <p><span class="crea" >Crea-</span><br><span class="tivity" >tivity.</span><span class="is-our" >is our </span><br><span class="ingredient" > ingredient</span></p>
-                <div class="w-creativity-socioal-icon">
-                    <ul>
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-facebook"></i></li>
-                        <li><i class="fa-solid fa-envelope"></i></i></li>
-                    </ul>
-                </div>
-                <div class="w-creativity-button">
-                    <button>Check Our Packages</button>
-                </div>
-            </div>
-            <div class="wrapper-creativity-bottom">
-                <div class="verticle-ruler-timeline">
-                    <h2 class="services active">Photography</h2>
-                    <h2 class="services">Videography</h2>
-                    <h2 class="services">Graphic Designer</h2>
-                    <h2 class="services">Illustration</h2>
-                    <h2 class="services">Animation</h2>
-                    <h2 class="services">Advertisement</h2>
-                </div>
-                <div class="section-showcase">
-                    <img class="quote" src="./assets/text-quotes-svgrepo-com.svg" alt="Quotes" width="50px">
-                    <h3 class="quote-text" >We help you to create the best graphics, <br> Photos videos, animations and illustrations </h3>
-                    <img class="dance-img"  src="https://images.unsplash.com/photo-1541904845547-0eaf866de232?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRhbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                        alt="">
-                    </div>
-                    <img class="arrow-down" src="./assets/reshot-icon-down-arrow-VUE5WQFCX2.svg" alt="arrow down" width="100px" class="arrow-down">
-            </div>
-        </div>
-    </div>
-</body>
+        <div class="creativity">
+          <div class="design">
+            <div class="creativity-content">
+              <h1>Crea-</h1>
 
+              <div class="sub-content 2">
+                <h1>tivity.</h1>
+                <p>
+                  is our <br />
+                  ingredient.
+                </p>
+              </div>
+            </div>
+            <div class="social-media">
+              <img src="./images/Twitter Icon.svg" alt="Twitter" srcset="" />
+              <img
+                src="./images/Instagram Icon.svg"
+                alt="Instagram"
+                srcset=""
+              />
+              <img src="./images/Facebook Icon.svg" alt="Facebook" srcset="" />
+              <img src="./images/Email Icon.svg" alt="Email" srcset="" />
+            </div>
+          </div>
+          <button class="btn">Check Our Package</button>
+        </div>
+        <div class="skills">
+          <div class="skills-design">
+            <div class="step">
+              <div class="step-circle active"></div>
+              <div class="step-circle"></div>
+              <div class="step-circle"></div>
+              <div class="step-circle"></div>
+              <div class="step-circle"></div>
+            </div>
+            <ul class="skills-content">
+              <li class="active-list">Photography</li>
+              <li>Videography</li>
+              <li>Graphic Design</li>
+              <li>Illustration</li>
+              <li>Animation</li>
+            </ul>
+          </div>
+
+          <div class="dance-content">
+            <h1>❜❜</h1>
+            <p>
+              We help you to create the best graphics, photos, videos,
+              animations and illustrations
+            </p>
+            <img
+              id="hero-small"
+              src="./images/small.JPG"
+              alt="hero-section-small"
+            />
+          </div>
+
+          <svg
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:ns1="http://sozi.baierouge.fr"
+            xmlns:cc="http://web.resource.org/cc/"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            id="Layer_1"
+            enable-background="new 0 0 50 150"
+            xml:space="preserve"
+            viewBox="0 0 50 150"
+            version="1.1"
+            y="0px"
+            x="0px"
+          >
+            <g>
+              <line
+                y2="24.964"
+                x1="23.871"
+                x2="23.871"
+                stroke="#000000"
+                stroke-miterlimit="10"
+                y1="149"
+                stroke-width="6"
+              />
+              <polygon points="42.292 25.87 3.969 25.87 24.885 1.917" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

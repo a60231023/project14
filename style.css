@@ -1,35 +1,246 @@
+/* font-family: 'Merriweather', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat:wght@200&display=swap');
-*{
-    margin: 0%;padding: 0%;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+:root {
+    --font-1: 'Poppins', sans-serif;
+    --font-2: 'Merriweather', serif;
 }
 
-html,body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F2F0;
+}
+
+.content-left {
+    display: flex;
+    width: 50%;
+    position: relative;
+    background: url("../images/hero-section-big.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#logo {
+    position: absolute;
+    width: 20%;
+    left: 10%;
+    top: 5%;
+}
+
+#hero-big {
     width: 100%;
     height: 100%;
+    display: none;
 }
 
+.content-right {
+    padding-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding-left: 1em;
+}
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
+.line {
+    width: 28%;
+    height: 2px;
+    background-color: #333333;
+    margin-left: 1em;
+}
 
-/* .arrow-down{
+.list {
+    width: 60%;
+    margin-right: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    font-family: var(--font-1);
+}
+
+.list li {
+    list-style: none;
+}
+
+.creativity {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.design {
+    display: flex;
+}
+
+.creativity-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    font-family: var(--font-2);
+}
+
+.creativity-content h1 {
+    font-size: 5.5rem;
+    -webkit-text-stroke: 1px #757473;
+    color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 0.9;
+}
+
+.sub-content {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-content h1 {
+    color: #333333;
+    -webkit-text-stroke: 0;
+    line-height: 1;
+}
+
+.sub-content p {
+    font-size: 1rem;
+    color: #828282;
+    line-height: 1;
+    padding-top: 1em;
+
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-    left: 3.5vh;
-    top: 12vh;
-    animation: updown 3.2s infinite ease-in-out;
+    top: 10px;
+    /* gap: 15px; */
 }
 
-@keyframes updown {
-    0%{
-        top: 12vh;
-    }
-    50%{
-        top: 16vh
-    }
-    100%{
-        top: 12vh;
-    }
+.social-media img {
+    width: 25%;
+    padding-top: 20px;
     
-} */
+}
+
+.btn {
+    background-color: #333333;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    width: 30%;
+    font-size: 1rem;
+    align-self: flex-end;
+    padding: 1em;
+    margin-right: 10em;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-design {
+    display: flex;
+    width: 30%;
+    gap: 10px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.step::before {
+    content: "";
+    background-color: #898988;
+    width: 1.5px;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+.step-circle {
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background-color: #828282;
+}
+
+.active {
+    width: 1em;
+    height: 1em;
+    background-color: #333333;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.skills-content li {
+    font-family: var(--font-1);
+    font-size: 0.8rem;
+    line-height: 2.5;
+    color: #A3A2A2;
+}
+
+.active-list {
+    color: #3C3C3C !important;
+}
+
+.dance-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+.dance-content h1 {
+    font-size: 2.5rem;
+    color: #333333;
+    /* height: 50px; */
+}
+
+.dance-content p {
+    font-family: var(--font-1);
+    font-size: 1.12rem;
+}
+
+.dance-content img {
+    width: 90%;
+    height: 165px;
+    padding-top: 1.5em;
+}
+
+svg {
+    width: 5%;
+    position: relative;
+    top: -40px;
+    transform: rotate(180deg);
+    align-self: flex-end;
+    margin: 0 auto;
+}
+
